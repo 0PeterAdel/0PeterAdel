@@ -72,6 +72,8 @@
 
 ###
 
+
+
 <div align="center">
   <a href="https://www.linkedin.com/in/1peteradel/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
@@ -86,8 +88,12 @@
 
 ###
 
+<br clear="both">
 
 <div align="center"><a href="https://github.com/0PeterAdel?tab=achievements"><img src="https://github-profile-trophy.vercel.app/?username=0PeterAdel&theme=onestar&no-frame=false" alt="0PeterAdel"/></a></div>
+
+
+<br clear="both">
 
 <!--   stats -->
 | .                                                                                                                                                  | .                                                                                                                                                |
