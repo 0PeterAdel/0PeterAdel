@@ -1,3 +1,5 @@
+![MasterHead](https://user-images.githubusercontent.com/90236635/232446433-d5540fa2-fe28-4bb8-b929-cdb51fe61336.gif)
+
 <h2 align="center">Hi 👋! My name is Peter <br>and I'm Developer passionate about computer science, artificial intelligence and Cyper security</h2>
 
 ###
