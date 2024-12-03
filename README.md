@@ -89,7 +89,7 @@
 <!--   stats -->
 | .                                                                                                                                                  | .                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![github stats](https://github-readme-stats.vercel.app/api?username=happySP0816&theme=gotham&show_icons=true&count_private=true&hide_border=false) | ![github stats](https://github-readme-streak-stats.herokuapp.com?user=happySP0816&theme=gotham&hide_border=false&date_format=M%20j%5B%2C%20Y%5D) |
+| ![github stats](https://github-readme-stats.vercel.app/api?username=0PeterAdel&theme=gotham&show_icons=true&count_private=true&hide_border=false) | ![github stats](https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=gotham&hide_border=false&date_format=M%20j%5B%2C%20Y%5D) |
 
 <div align="center">
 <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
