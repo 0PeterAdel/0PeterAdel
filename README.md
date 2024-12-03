@@ -5,7 +5,7 @@
 ###
 
 <div align="center">
-<img src="https://profile-counter.glitch.me/happySP0816/count.svg">  
+<img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
 
 <a href="https://github.com/happySP0816">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=happySP0816&theme=react-dark&hide_border=false&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" alt="activity graph">
@@ -92,10 +92,10 @@
 | ![github stats](https://github-readme-stats.vercel.app/api?username=happySP0816&theme=gotham&show_icons=true&count_private=true&hide_border=false) | ![github stats](https://github-readme-streak-stats.herokuapp.com?user=happySP0816&theme=gotham&hide_border=false&date_format=M%20j%5B%2C%20Y%5D) |
 
 <div align="center">
-<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=happySP0816&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="happySP0816"/>
+<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
 </div>
 
-<div align="center"><a href="https://github.com/happySP0816?tab=achievements"><img src="https://github-profile-trophy.vercel.app/?username=happySP0816&theme=onestar&no-frame=false" alt="happySP0816"/></a></div>
+<div align="center"><a href="https://github.com/0PeterAdel?tab=achievements"><img src="https://github-profile-trophy.vercel.app/?username=0PeterAdel&theme=onestar&no-frame=false" alt="0PeterAdel"/></a></div>
 
 <div align="center">
 
@@ -103,7 +103,7 @@
 
 Counting of visitors to this page in this section started from Des 12, 2024
 
-![](https://count.getloli.com/get/@happySP0816.github.readme)
+![](https://count.getloli.com/get/@0PeterAdel.github.readme)
 </div>
 
 ###
