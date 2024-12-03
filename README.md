@@ -7,6 +7,7 @@
 ###
 
 <div align="center">
+<img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
 
 <a href="https://github.com/0PeterAdel">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=0PeterAdel&theme=react-dark&hide_border=false&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" alt="activity graph">
@@ -104,7 +105,14 @@
 </div>
 
 
+<div align="center">
 
+### Profile Views
+
+Counting of visitors to this page in this section started from Des 12, 2024
+
+![](https://count.getloli.com/get/@0PeterAdel.github.readme)
+</div>
 
 ###
 
