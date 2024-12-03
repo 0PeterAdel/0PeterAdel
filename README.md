@@ -5,11 +5,22 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=0PeterAdel&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=0PeterAdel&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
+<img src="https://profile-counter.glitch.me/happySP0816/count.svg">  
+
+<a href="https://github.com/happySP0816">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=happySP0816&theme=react-dark&hide_border=false&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" alt="activity graph">
+</a>
 </div>
 
 ###
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/snake.svg" />
+</picture>
+
+
 
 <img align="right" height="150" src="https://cyb3r0xsasa.github.io/Lion-Template/image/about.jpg"  />
 
@@ -73,17 +84,33 @@
 
 ###
 
-<br clear="both">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/snake.svg" />
-</picture>
+
+
+<!--   stats -->
+| .                                                                                                                                                  | .                                                                                                                                                |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![github stats](https://github-readme-stats.vercel.app/api?username=happySP0816&theme=gotham&show_icons=true&count_private=true&hide_border=false) | ![github stats](https://github-readme-streak-stats.herokuapp.com?user=happySP0816&theme=gotham&hide_border=false&date_format=M%20j%5B%2C%20Y%5D) |
+
+<div align="center">
+<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=happySP0816&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="happySP0816"/>
+</div>
+
+<div align="center"><a href="https://github.com/happySP0816?tab=achievements"><img src="https://github-profile-trophy.vercel.app/?username=happySP0816&theme=onestar&no-frame=false" alt="happySP0816"/></a></div>
+
+<div align="center">
+
+### Profile Views
+
+Counting of visitors to this page in this section started from Des 12, 2024
+
+![](https://count.getloli.com/get/@happySP0816.github.readme)
+</div>
 
 ###
 
-<div align="center">
-  <img src="https://profile-counter.glitch.me/0PeterAdel/count.svg?"  />
-</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+</p>
 
 ###
