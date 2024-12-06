@@ -24,7 +24,7 @@
 
 
 
-<img align="right" height="150" src="https://cyb3r0xsasa.github.io/Lion-Template/image/about.jpg"  />
+<img align="right" height="150" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZubnc4bTBvc2M0Z3V1MWJ1eDZpdWd2czlycHhnOGk4dTVndmphNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Rpl1sod1vCXK0L2SUN/giphy.gif"  />
 
 ###
 
@@ -91,7 +91,6 @@
 <br clear="both">
 
 <div align="center"><a href="https://github.com/0PeterAdel?tab=achievements"><img src="https://github-profile-trophy.vercel.app/?username=0PeterAdel&theme=onestar&no-frame=false" alt="0PeterAdel"/></a></div>
-
 
 <br clear="both">
 
