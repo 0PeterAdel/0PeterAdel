@@ -7,11 +7,11 @@
 ###
 
 <div align="center">
-<img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
+  <img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
 
-<a href="https://github.com/0PeterAdel">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=0PeterAdel&theme=react-dark&hide_border=false&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" alt="activity graph">
-</a>
+  <a href="https://github.com/0PeterAdel">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=0PeterAdel&theme=react-dark&hide_border=false&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" alt="activity graph">
+  </a>
 </div>
 
 ###
@@ -21,8 +21,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/snake.svg" />
 </picture>
-
-
 
 <img align="right" height="150" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZubnc4bTBvc2M0Z3V1MWJ1eDZpdWd2czlycHhnOGk4dTVndmphNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Rpl1sod1vCXK0L2SUN/giphy.gif"  />
 
@@ -72,9 +70,10 @@
 
 ###
 
-
-
 <div align="center">
+  <a href="https://peteradel.netlify.app" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Portfolio&logo=link&label=&color=FF5733&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="portfolio logo"  />
+  </a>
   <a href="https://www.linkedin.com/in/1peteradel/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
@@ -90,17 +89,35 @@
 
 <br clear="both">
 
-<div align="center"><a href="https://github.com/0PeterAdel?tab=achievements"><img src="https://github-profile-trophy.vercel.app/?username=0PeterAdel&theme=onestar&no-frame=false" alt="0PeterAdel"/></a></div>
+<div align="center">
+  <a href="https://github.com/0PeterAdel?tab=achievements">
+    <img src="https://github-profile-trophy.vercel.app/?username=0PeterAdel&theme=onestar&no-frame=false" alt="0PeterAdel"/>
+  </a>
+</div>
 
 <br clear="both">
 
 <!--   stats -->
-| .                                                                                                                                                  | .                                                                                                                                                |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![github stats](https://github-readme-stats.vercel.app/api?username=0PeterAdel&theme=gotham&show_icons=true&count_private=true&hide_border=false) | ![github stats](https://github-readme-streak-stats.herokuapp.com/?user=0PeterAdel&theme=gotham&hide_border=false) |
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=0PeterAdel&theme=gotham&show_icons=true&count_private=true&hide_border=false" alt="github_stats" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
+      </td>
+    </tr>
+  </table>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=gotham&hide_border=false&date_format=j%20M%20Y" alt="Streak Stats" />
+</div>
 
 <div align="center">
-<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
+  <h3>
+      <a href="https://peteradel.netlify.app" target="_blank">
+      Check out my portfolio: PeterAdel
+      </a
+  <h3>
 </div>
 
 
@@ -115,11 +132,6 @@ Counting of visitors to this page in this section started from Des 12, 2024
 
 ###
 
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
 </p>
-
-###
-
-
