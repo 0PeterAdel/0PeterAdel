@@ -105,11 +105,11 @@
         <img src="https://github-readme-stats.vercel.app/api?username=0PeterAdel&theme=gotham&show_icons=true&count_private=true&hide_border=false" alt="github_stats" />
       </td>
       <td>
-        <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
+        <img src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=gotham&hide_border=false&date_format=j%20M%20Y" alt="Streak Stats" />
       </td>
     </tr>
   </table>
-<img src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=gotham&hide_border=false&date_format=j%20M%20Y" alt="Streak Stats" />
+  <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
 </div>
 
 <div align="center">
