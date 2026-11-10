@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Refresh verified external merged PRs and the GitHub contribution calendar.
+"""Refresh verified external merged PRs and a dark GitHub stats card.
 
 Runs in the 0PeterAdel/0PeterAdel profile repository via GitHub Actions.
 Only the marked README sections are touched. No third-party dependencies.
 """
 from collections import defaultdict
-from datetime import date
 from html import escape
 from pathlib import Path
 from urllib.parse import quote, urlencode
@@ -18,21 +17,12 @@ USERNAME = "0PeterAdel"
 # Personal repositories and the author's own Shift-Core organization are not
 # external open-source contributions.
 EXCLUDED_OWNERS = {USERNAME.casefold(), "shift-core"}
-PROFILE_REPO = f"{USERNAME}/{USERNAME}"
 README = Path("README.md")
-SVG_PATH = Path("assets/contributions.svg")
+STATS_PATH = Path("assets/github-stats-dark.svg")
 START = "<!-- OPEN SOURCE CONTRIBUTIONS START -->"
 END = "<!-- OPEN SOURCE CONTRIBUTIONS END -->"
-GRAPH_START = "<!-- PROFILE ACTIVITY START -->"
-GRAPH_END = "<!-- PROFILE ACTIVITY END -->"
 TOKEN = os.environ.get("GH_TOKEN")
 LABELS = {"CrossGL/crosstl": "CrossTL", "alltheplaces/alltheplaces": "AllThePlaces"}
-COLORS = {
-    "NONE": "#161b22", "FIRST_QUARTILE": "#0e4429",
-    "SECOND_QUARTILE": "#006d32", "THIRD_QUARTILE": "#26a641",
-    "FOURTH_QUARTILE": "#39d353",
-}
-
 
 def github_json(url, payload=None):
     if not TOKEN:
@@ -133,56 +123,51 @@ def render_contributions(prs):
     )
 
 
-def render_graph():
+def render_stats_card():
+    """Render a dark statistics card using authenticated GitHub GraphQL data."""
     query = """query($login: String!) {
       user(login: $login) {
+        repositories(ownerAffiliations: OWNER, privacy: PUBLIC) { totalCount }
+        followers { totalCount }
+        pullRequests(states: MERGED) { totalCount }
         contributionsCollection {
-          contributionCalendar {
-            totalContributions
-            weeks { contributionDays { date contributionCount contributionLevel } }
-          }
+          contributionCalendar { totalContributions }
         }
       }
     }"""
-    data = github_json("https://api.github.com/graphql", {"query": query, "variables": {"login": USERNAME}})
-    calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
-    weeks = calendar["weeks"]
-    if not weeks or not any(w["contributionDays"] for w in weeks):
-        raise RuntimeError("Empty GitHub contribution calendar")
-    side, gap, left, top = 11, 3, 35, 59
-    width, height = max(750, left + len(weeks) * (side + gap) + 20), 194
-    squares = []
-    months = []
-    seen = set()
-    for col, week in enumerate(weeks):
-        for day in week["contributionDays"]:
-            d = date.fromisoformat(day["date"])
-            x, y = left + col * (side + gap), top + ((d.weekday() + 1) % 7) * (side + gap)
-            level = day["contributionLevel"]
-            fill = COLORS.get(level, COLORS["NONE"])
-            tip = escape(f'{day["date"]}: {day["contributionCount"]} contributions', quote=True)
-            squares.append(f'<rect x="{x}" y="{y}" width="{side}" height="{side}" rx="2" fill="{fill}"><title>{tip}</title></rect>')
-            key = (d.year, d.month)
-            if d.day <= 7 and key not in seen:
-                months.append(f'<text x="{x}" y="47" fill="#8b949e" font-size="10">{d.strftime("%b")}</text>')
-                seen.add(key)
-    svg = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" '
-        f'aria-label="GitHub contribution activity for the past year">'
-        f'<title>{USERNAME} — GitHub contributions</title>'
-        f'<rect width="{width}" height="{height}" rx="12" fill="#0d1117" />'
-        f'<text x="23" y="25" fill="#e6edf3" font-size="15" font-weight="600" font-family="Arial,sans-serif">GITHUB CONTRIBUTIONS</text>'
-        f'<text x="{width - 23}" y="25" text-anchor="end" fill="#39d353" font-size="13" font-family="Arial,sans-serif">'
-        f'{calendar["totalContributions"]} in the last year</text>'
-        '<g font-family="Arial,sans-serif">' + "".join(months)
-        + '<text x="6" y="81" fill="#8b949e" font-size="10">Mon</text>'
-        + '<text x="6" y="109" fill="#8b949e" font-size="10">Wed</text>'
-        + '<text x="6" y="137" fill="#8b949e" font-size="10">Fri</text>'
-        + "</g>" + "".join(squares)
-        + f'<text x="{width - 20}" y="173" text-anchor="end" fill="#8b949e" font-size="11" font-family="Arial,sans-serif">Updated {date.today().isoformat()} · GitHub GraphQL</text>'
-        + "</svg>\n"
+    data = github_json(
+        "https://api.github.com/graphql",
+        {"query": query, "variables": {"login": USERNAME}},
     )
-    return svg
+    user = data.get("data", {}).get("user")
+    if not user:
+        raise RuntimeError("GitHub stats query returned no user data")
+    values = [
+        ("Contributions / last year", user["contributionsCollection"]["contributionCalendar"]["totalContributions"]),
+        ("Merged pull requests", user["pullRequests"]["totalCount"]),
+        ("Public repositories", user["repositories"]["totalCount"]),
+        ("Followers", user["followers"]["totalCount"]),
+    ]
+    items = []
+    for i, (label, value) in enumerate(values):
+        col, row = i % 2, i // 2
+        x, y = 32 + col * 239, 89 + row * 82
+        items.extend([
+            f'<text x="{x}" y="{y}" fill="#58a6ff" font-size="27" font-weight="700">{int(value):,}</text>',
+            f'<text x="{x}" y="{y + 23}" fill="#8b949e" font-size="12">{escape(label)}</text>',
+        ])
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="510" height="262" '
+        'viewBox="0 0 510 262" role="img" aria-label="GitHub statistics">'
+        '<rect x="1" y="1" width="508" height="260" rx="11" fill="#0d1117" stroke="#30363d" />'
+        '<text x="30" y="36" fill="#e6edf3" font-size="17" font-weight="700">GITHUB STATS</text>'
+        '<text x="482" y="36" text-anchor="end" fill="#3fb950" font-size="12">0PeterAdel</text>'
+        '<path d="M30 51H480" stroke="#30363d" />'
+        + "".join(items)
+        + '<path d="M30 213H480" stroke="#30363d" />'
+        '<text x="30" y="239" fill="#8b949e" font-size="11">Updated daily via GitHub Actions</text>'
+        '</svg>\n'
+    )
 
 
 def replace_block(readme, start, end, replacement):
@@ -197,22 +182,9 @@ def main():
     readme = README.read_text(encoding="utf-8")
     prs = verified_merged_prs()
     readme = replace_block(readme, START, END, render_contributions(prs))
-    try:
-        svg = render_graph()
-    except Exception as exc:
-        print(f"::warning::Could not refresh contribution graph: {exc}")
-        svg = None
-    if svg is not None:
-        SVG_PATH.parent.mkdir(parents=True, exist_ok=True)
-        SVG_PATH.write_text(svg, encoding="utf-8")
-        graph_html = (
-            f'{GRAPH_START}\n<div align="center">\n'
-            f'  <a href="https://github.com/{USERNAME}"><img width="100%" '
-            f'src="https://raw.githubusercontent.com/{PROFILE_REPO}/main/assets/contributions.svg" '
-            f'alt="GitHub contribution activity — automatically refreshed" /></a>\n'
-            f'</div>\n{GRAPH_END}'
-        )
-        readme = replace_block(readme, GRAPH_START, GRAPH_END, graph_html)
+    stats_svg = render_stats_card()
+    STATS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATS_PATH.write_text(stats_svg, encoding="utf-8")
     README.write_text(readme, encoding="utf-8")
     print(f"Updated {len(prs)} merged PRs across {len({p['repo'] for p in prs})} external repositories")
 
