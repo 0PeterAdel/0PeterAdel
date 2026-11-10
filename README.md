@@ -6,49 +6,14 @@
 
 ###
 
-<!-- OPEN SOURCE CONTRIBUTIONS START -->
-<h3 align="center">🌍 Open Source Contributions</h3>
 
-<p align="center">
-  Contributing to real-world open-source projects through code, testing, and collaboration.
-</p>
-
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/CrossGL/crosstl">
-        <img src="https://img.shields.io/badge/CrossTL-Shader%20Compiler-0e75b6?style=for-the-badge&logo=github&logoColor=white" alt="CrossTL" />
-      </a>
-      <p><b>Compiler Engineering</b><br/>Fixed GLSL multisample image queries, with regression tests and native shader validation.</p>
-      <a href="https://github.com/CrossGL/crosstl/pull/4266">
-        <img src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&logo=github&logoColor=white" alt="CrossTL PR 4266 Merged" />
-      </a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/alltheplaces/alltheplaces">
-        <img src="https://img.shields.io/badge/AllThePlaces-Location%20Data-0e75b6?style=for-the-badge&logo=github&logoColor=white" alt="AllThePlaces" />
-      </a>
-      <p><b>Python &amp; Data Collection</b><br/>Improved the Welcia Japan spider's download reliability to recover slow-loading store pages.</p>
-      <a href="https://github.com/alltheplaces/alltheplaces/pull/20456">
-        <img src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&logo=github&logoColor=white" alt="AllThePlaces PR 20456 Merged" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <a href="https://github.com/CrossGL/crosstl/graphs/contributors">CrossTL Contributors</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/alltheplaces/alltheplaces/graphs/contributors">AllThePlaces Contributors</a>
-</p>
-<!-- OPEN SOURCE CONTRIBUTIONS END -->
 
 <div align="center">
   <img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
 
-  <a href="https://github.com/0PeterAdel">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=0PeterAdel&theme=react-dark&hide_border=false&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" alt="activity graph">
-  </a>
+  <!-- PROFILE ACTIVITY START -->
+  <a href="https://github.com/0PeterAdel">📈 View my live GitHub activity</a>
+<!-- PROFILE ACTIVITY END -->
 </div>
 
 ###
@@ -121,6 +86,41 @@
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
   </a>
 </div>
+
+###
+
+<!-- OPEN SOURCE CONTRIBUTIONS START -->
+<h3 align="center">🌍 Open Source Contributions</h3>
+
+<p align="center">
+  Contributing to real-world open-source projects through code, testing, and collaboration.
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/CrossGL/crosstl">
+        <img src="https://img.shields.io/badge/CrossTL-Shader%20Compiler-0e75b6?style=for-the-badge&logo=github&logoColor=white" alt="CrossTL" />
+      </a>
+      <p><b>Compiler Engineering</b><br/>Fixed GLSL multisample image queries, with regression tests and native shader validation.</p>
+      <a href="https://github.com/CrossGL/crosstl/pull/4266">
+        <img src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&logo=github&logoColor=white" alt="CrossTL PR 4266 Merged" />
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/alltheplaces/alltheplaces">
+        <img src="https://img.shields.io/badge/AllThePlaces-Location%20Data-0e75b6?style=for-the-badge&logo=github&logoColor=white" alt="AllThePlaces" />
+      </a>
+      <p><b>Python &amp; Data Collection</b><br/>Improved the Welcia Japan spider's download reliability to recover slow-loading store pages.</p>
+      <a href="https://github.com/alltheplaces/alltheplaces/pull/20456">
+        <img src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&logo=github&logoColor=white" alt="AllThePlaces PR 20456 Merged" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- OPEN SOURCE CONTRIBUTIONS END -->
+
 
 ###
 
