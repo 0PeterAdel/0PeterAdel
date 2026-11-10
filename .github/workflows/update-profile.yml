@@ -34,7 +34,8 @@ jobs:
 
       - name: Commit updates only when content changes
         run: |
-          git add README.md assets/contributions.svg
+          git add README.md
+          if [ -f assets/contributions.svg ]; then git add assets/contributions.svg; fi
           if git diff --cached --quiet; then
             echo "No profile changes to publish."
             exit 0
