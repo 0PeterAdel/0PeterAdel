@@ -1,5 +1,3 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=0PeterAdel&label=Profile%20views&color=0e75b6&style=flat" alt="max71126" /> </p>
-
 ![MasterHead](https://user-images.githubusercontent.com/90236635/232446433-d5540fa2-fe28-4bb8-b929-cdb51fe61336.gif)
 
 <h2 align="center">Hi 👋! My name is Peter <br>and I'm Developer passionate about computer science, artificial intelligence and Cyper security</h2>
@@ -7,18 +5,6 @@
 ###
 
 
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
-
-  <!-- PROFILE ACTIVITY START -->
-<div align="center">
-  <a href="https://github.com/0PeterAdel"><img width="100%" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/main/assets/contributions.svg" alt="GitHub contribution activity — automatically refreshed" /></a>
-</div>
-<!-- PROFILE ACTIVITY END -->
-</div>
-
-###
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/output/github-snake-dark.svg" />
@@ -135,14 +121,13 @@
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=0PeterAdel&theme=gotham&show_icons=true&count_private=true&hide_border=false" alt="github_stats" />
+        <img width="100%" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/main/assets/github-stats-dark.svg" alt="GitHub Stats — updated daily" />
       </td>
       <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=gotham&hide_border=false&date_format=j%20M%20Y" alt="Streak Stats" />
+        <img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=github-dark-blue&hide_border=true&date_format=j%20M%20Y" alt="Streak Stats" />
       </td>
     </tr>
   </table>
-  <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs?username=0PeterAdel&theme=gotham&hide_border=false&show_icons=true&locale=en&layout=compact" alt="0PeterAdel"/>
 </div>
 
 <div align="center">
@@ -152,18 +137,6 @@
       </a
   <h3>
 </div>
-
-
-<div align="center">
-
-### Profile Views
-
-Counting of visitors to this page in this section started from Des 12, 2024
-
-![](https://count.getloli.com/get/@0PeterAdel.github.readme)
-</div>
-
-###
 
 
 <p align="center">
