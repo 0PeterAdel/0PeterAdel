@@ -27,7 +27,7 @@ jobs:
         with:
           persist-credentials: true
 
-      - name: Discover merged pull requests and generate activity graph
+      - name: Discover merged pull requests and generate dark GitHub stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/update_profile.py
@@ -35,12 +35,12 @@ jobs:
       - name: Commit updates only when content changes
         run: |
           git add README.md
-          if [ -f assets/contributions.svg ]; then git add assets/contributions.svg; fi
+          if [ -f assets/github-stats-dark.svg ]; then git add assets/github-stats-dark.svg; fi
           if git diff --cached --quiet; then
             echo "No profile changes to publish."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(profile): refresh merged PRs and contribution chart"
+          git commit -m "chore(profile): refresh merged PRs and dark GitHub stats"
           git push
