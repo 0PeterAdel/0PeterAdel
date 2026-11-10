@@ -12,7 +12,9 @@
   <img src="https://profile-counter.glitch.me/0PeterAdel/count.svg">  
 
   <!-- PROFILE ACTIVITY START -->
-  <a href="https://github.com/0PeterAdel">📈 View my live GitHub activity</a>
+<div align="center">
+  <a href="https://github.com/0PeterAdel"><img width="100%" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/main/assets/contributions.svg" alt="GitHub contribution activity — automatically refreshed" /></a>
+</div>
 <!-- PROFILE ACTIVITY END -->
 </div>
 
@@ -91,34 +93,29 @@
 
 <!-- OPEN SOURCE CONTRIBUTIONS START -->
 <h3 align="center">🌍 Open Source Contributions</h3>
-
-<p align="center">
-  Contributing to real-world open-source projects through code, testing, and collaboration.
-</p>
-
+<p align="center">Verified merged pull requests in open-source communities · Automatically updated daily</p>
 <table align="center">
   <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/CrossGL/crosstl">
-        <img src="https://img.shields.io/badge/CrossTL-Shader%20Compiler-0e75b6?style=for-the-badge&logo=github&logoColor=white" alt="CrossTL" />
-      </a>
-      <p><b>Compiler Engineering</b><br/>Fixed GLSL multisample image queries, with regression tests and native shader validation.</p>
-      <a href="https://github.com/CrossGL/crosstl/pull/4266">
-        <img src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&logo=github&logoColor=white" alt="CrossTL PR 4266 Merged" />
-      </a>
+    <td align="center" valign="top" width="50%">
+      <a href="https://github.com/alltheplaces/alltheplaces"><img alt="AllThePlaces" src="https://img.shields.io/badge/AllThePlaces-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>1 merged PR</b><br /><sub>[Welcia JP] Fix spider download timeout</sub></p>
+      <a href="https://github.com/alltheplaces/alltheplaces/pull/20456"><img alt="PR #20456 merged" src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
     </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/alltheplaces/alltheplaces">
-        <img src="https://img.shields.io/badge/AllThePlaces-Location%20Data-0e75b6?style=for-the-badge&logo=github&logoColor=white" alt="AllThePlaces" />
-      </a>
-      <p><b>Python &amp; Data Collection</b><br/>Improved the Welcia Japan spider's download reliability to recover slow-loading store pages.</p>
-      <a href="https://github.com/alltheplaces/alltheplaces/pull/20456">
-        <img src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&logo=github&logoColor=white" alt="AllThePlaces PR 20456 Merged" />
-      </a>
+    <td align="center" valign="top" width="50%">
+      <a href="https://github.com/CrossGL/crosstl"><img alt="CrossTL" src="https://img.shields.io/badge/CrossTL-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>1 merged PR</b><br /><sub>fix: fix GLSL sample queries for multisample images</sub></p>
+      <a href="https://github.com/CrossGL/crosstl/pull/4266"><img alt="PR #4266 merged" src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
     </td>
   </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="https://github.com/PXDiv/Div-Acer-Manager-Max"><img alt="Div Acer Manager Max" src="https://img.shields.io/badge/Div%20Acer%20Manager%20Max-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>1 merged PR</b><br /><sub>fix(keyboard): preserve Static color readback and report apply failures</sub></p>
+      <a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/280"><img alt="PR #280 merged" src="https://img.shields.io/badge/PR%20%23280-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+    </td>
+    <td width="50%"></td>
+  </tr>
 </table>
-
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
 
 
