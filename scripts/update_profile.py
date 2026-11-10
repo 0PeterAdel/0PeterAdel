@@ -92,7 +92,7 @@ def render_contributions(prs):
     grouped = defaultdict(list)
     for pr in prs:
         grouped[pr["repo"]].append(pr)
-    repos = sorted(grouped, key=lambda r: (-max(p["merged"] for p in grouped[r]), r.casefold()))
+    repos = sorted(grouped, key=lambda r: (max(p["merged"] for p in grouped[r]), r.casefold()), reverse=True)
     cards = []
     for repo in repos[:10]:
         recent = sorted(grouped[repo], key=lambda p: p["merged"], reverse=True)
