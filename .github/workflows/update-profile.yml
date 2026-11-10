@@ -1,0 +1,45 @@
+name: Refresh profile contributions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - scripts/update_profile.py
+      - .github/workflows/update-profile.yml
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-contributions-update
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Discover merged pull requests and generate activity graph
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_profile.py
+
+      - name: Commit updates only when content changes
+        run: |
+          git add README.md assets/contributions.svg
+          if git diff --cached --quiet; then
+            echo "No profile changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(profile): refresh merged PRs and contribution chart"
+          git push
