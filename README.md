@@ -108,12 +108,11 @@
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top" width="50%">
+    <td align="center" valign="top" colspan="2" width="100%">
       <a href="https://github.com/PXDiv/Div-Acer-Manager-Max"><img alt="Div Acer Manager Max" src="https://img.shields.io/badge/Div%20Acer%20Manager%20Max-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
       <p><b>1 merged PR</b><br /><sub>fix(keyboard): preserve Static color readback and report apply failures</sub></p>
       <a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/280"><img alt="PR #280 merged" src="https://img.shields.io/badge/PR%20%23280-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
     </td>
-    <td width="50%"></td>
   </tr>
 </table>
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
