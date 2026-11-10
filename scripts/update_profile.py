@@ -122,7 +122,7 @@ def render_contributions(prs):
     for idx in range(0, len(cards), 2):
         pair = cards[idx:idx + 2]
         if len(pair) == 1:
-            pair.append('    <td width="50%"></td>')
+            pair[0] = pair[0].replace('width="50%"', 'colspan="2" width="100%"', 1)
         rows.append("  <tr>\n" + "\n".join(pair) + "\n  </tr>")
     return (
         f"{START}\n"
