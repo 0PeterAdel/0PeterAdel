@@ -8,7 +8,9 @@ on:
       - scripts/update_profile.py
       - .github/workflows/update-profile.yml
   schedule:
-    - cron: "17 4 * * *"
+    # External repository merges cannot trigger this repository directly.
+    # Poll twice per hour; scheduled runs may still be delayed by GitHub.
+    - cron: "17,47 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,11 +25,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           persist-credentials: true
 
-      - name: Discover merged pull requests and generate dark GitHub stats
+      - name: Validate updater rendering
+        run: python3 -m unittest discover -s tests -p "test_profile.py" -v
+
+      - name: Discover external merged and open PRs; generate dark GitHub stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/update_profile.py
