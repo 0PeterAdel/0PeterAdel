@@ -78,7 +78,67 @@ def verified_merged_prs():
     return results
 
 
-def render_contributions(prs):
+
+def verified_open_prs():
+    """Discover the author's open PRs in external repos, without counting them as merged."""
+    search = f"is:pr is:open author:{USERNAME} -user:{USERNAME} -org:Shift-Core"
+    results = []
+    seen = set()
+    for page in range(1, 11):
+        params = urlencode({"q": search, "sort": "updated", "order": "desc", "per_page": 100, "page": page})
+        page_data = github_json(f"https://api.github.com/search/issues?{params}")
+        if page_data.get("incomplete_results"):
+            raise RuntimeError("GitHub search results are incomplete; retaining the current README")
+        items = page_data["items"]
+        for issue in items:
+            match = re.fullmatch(r"https://github\.com/([^/]+)/([^/]+)/pull/(\d+)", issue["html_url"])
+            if not match:
+                continue
+            owner, repo, number = match.groups()
+            key = (owner.casefold(), repo.casefold(), int(number))
+            if owner.casefold() in EXCLUDED_OWNERS or key in seen:
+                continue
+            pr = github_json(f"https://api.github.com/repos/{owner}/{repo}/pulls/{number}")
+            if (
+                pr.get("state") != "open"
+                or pr.get("merged_at")
+                or pr.get("user", {}).get("login", "").casefold() != USERNAME.casefold()
+            ):
+                continue
+            seen.add(key)
+            results.append({
+                "repo": f"{owner}/{repo}",
+                "number": int(number),
+                "title": pr["title"],
+                "url": pr["html_url"],
+                "updated": pr["updated_at"],
+            })
+        if len(items) < 100:
+            break
+    return sorted(results, key=lambda p: p["updated"], reverse=True)
+
+
+def render_open_prs(prs):
+    """Keep work in review clearly separate from accepted merged contributions."""
+    if not prs:
+        return ""
+    entries = [
+        f'<li><a href="{escape(pr["url"], quote=True)}">'
+        f'{escape(pr["repo"])} #{pr["number"]}</a> — {escape(pr["title"][:110])}</li>'
+        for pr in prs[:12]
+    ]
+    lines = [
+        f'<details><summary>⏳ Open external pull requests ({len(prs)})</summary>',
+        '<ul>',
+        *entries,
+        '</ul>',
+        '<p align="center"><a href="https://github.com/pulls?q=is%3Apr%20is%3Aopen%20author%3A0PeterAdel">View all open PRs</a></p>',
+        '</details>',
+    ]
+    return "\n".join(lines) + "\n"
+
+
+def render_contributions(prs, open_prs):
     grouped = defaultdict(list)
     for pr in prs:
         grouped[pr["repo"]].append(pr)
@@ -117,9 +177,9 @@ def render_contributions(prs):
     return (
         f"{START}\n"
         '<h3 align="center">🌍 Open Source Contributions</h3>\n'
-        '<p align="center">Verified merged pull requests in open-source communities · Refreshed approximately every 30 minutes</p>\n'
+        '<p align="center">Verified merged pull requests in external communities · Refreshed regularly via GitHub Actions</p>\n'
         '<table align="center">\n' + "\n".join(rows) + '\n</table>\n'
-        f"{END}"
+        f"{render_open_prs(open_prs)}{END}"
     )
 
 
@@ -165,7 +225,7 @@ def render_stats_card():
         '<path d="M30 51H480" stroke="#30363d" />'
         + "".join(items)
         + '<path d="M30 213H480" stroke="#30363d" />'
-        '<text x="30" y="239" fill="#8b949e" font-size="11">Refreshed periodically via GitHub Actions</text>'
+        '<text x="30" y="239" fill="#8b949e" font-size="11">Refreshed regularly via GitHub Actions</text>'
         '</svg>\n'
     )
 
@@ -181,12 +241,13 @@ def replace_block(readme, start, end, replacement):
 def main():
     readme = README.read_text(encoding="utf-8")
     prs = verified_merged_prs()
-    readme = replace_block(readme, START, END, render_contributions(prs))
+    open_prs = verified_open_prs()
+    readme = replace_block(readme, START, END, render_contributions(prs, open_prs))
     stats_svg = render_stats_card()
     STATS_PATH.parent.mkdir(parents=True, exist_ok=True)
     STATS_PATH.write_text(stats_svg, encoding="utf-8")
     README.write_text(readme, encoding="utf-8")
-    print(f"Updated {len(prs)} merged PRs across {len({p['repo'] for p in prs})} external repositories")
+    print(f"Updated {len(prs)} merged PRs across {len({p['repo'] for p in prs})} external repositories; {len(open_prs)} open PRs")
 
 
 if __name__ == "__main__":
