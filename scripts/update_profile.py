@@ -128,7 +128,7 @@ def render_open_prs(prs):
         for pr in prs[:12]
     ]
     lines = [
-        f'<details><summary>⏳ Open external contributions ({len(prs)} PRs)</summary>',
+        f'<details><summary>⏳ Open external pull requests ({len(prs)})</summary>',
         '<ul>',
         *entries,
         '</ul>',
