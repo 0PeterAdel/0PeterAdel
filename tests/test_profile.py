@@ -76,7 +76,7 @@ class ProfileUpdateTests(unittest.TestCase):
         html = update_profile.render_contributions(merged, opened)
         self.assertIn("2 merged PRs", html)
         self.assertIn("PR%20%234362-MERGED", html)
-        self.assertIn("Open external contributions (1 PRs)", html)
+        self.assertIn("Open external pull requests (1)", html)
         self.assertIn("crosstl #4375", html)
         self.assertIn("Fix &amp; verify parser", html)
         self.assertIn("Fix &lt;mixed&gt; integer types", html)
