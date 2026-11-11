@@ -79,7 +79,7 @@
 
 <!-- OPEN SOURCE CONTRIBUTIONS START -->
 <h3 align="center">🌍 Open Source Contributions</h3>
-<p align="center">Verified merged pull requests in open-source communities · Automatically updated daily</p>
+<p align="center">Verified merged pull requests in open-source communities · Refreshed approximately every 30 minutes</p>
 <table align="center">
   <tr>
     <td align="center" valign="top" width="50%">
