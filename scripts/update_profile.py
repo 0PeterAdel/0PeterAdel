@@ -117,7 +117,7 @@ def render_contributions(prs):
     return (
         f"{START}\n"
         '<h3 align="center">🌍 Open Source Contributions</h3>\n'
-        '<p align="center">Verified merged pull requests in open-source communities · Automatically updated daily</p>\n'
+        '<p align="center">Verified merged pull requests in open-source communities · Refreshed approximately every 30 minutes</p>\n'
         '<table align="center">\n' + "\n".join(rows) + '\n</table>\n'
         f"{END}"
     )
@@ -165,7 +165,7 @@ def render_stats_card():
         '<path d="M30 51H480" stroke="#30363d" />'
         + "".join(items)
         + '<path d="M30 213H480" stroke="#30363d" />'
-        '<text x="30" y="239" fill="#8b949e" font-size="11">Updated daily via GitHub Actions</text>'
+        '<text x="30" y="239" fill="#8b949e" font-size="11">Refreshed periodically via GitHub Actions</text>'
         '</svg>\n'
     )
 
