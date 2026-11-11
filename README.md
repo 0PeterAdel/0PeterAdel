@@ -79,7 +79,7 @@
 
 <!-- OPEN SOURCE CONTRIBUTIONS START -->
 <h3 align="center">🌍 Open Source Contributions</h3>
-<p align="center">Verified merged pull requests in open-source communities · Refreshed approximately every 30 minutes</p>
+<p align="center">Verified merged pull requests in external communities · Refreshed regularly via GitHub Actions</p>
 <table align="center">
   <tr>
     <td align="center" valign="top" width="50%">
@@ -101,6 +101,19 @@
     </td>
   </tr>
 </table>
+<details><summary>⏳ Open external pull requests (8)</summary>
+<ul>
+<li><a href="https://github.com/alltheplaces/alltheplaces/pull/20473">alltheplaces/alltheplaces #20473</a> — [Staples CA] Filter wireless service locations</li>
+<li><a href="https://github.com/CrossGL/crosstl/pull/4375">CrossGL/crosstl #4375</a> — fix(opencl): reject an unterminated comment after a parameter qualifier with SyntaxError</li>
+<li><a href="https://github.com/huggingface/huggingface_hub/pull/5338">huggingface/huggingface_hub #5338</a> — [Docs] Fix get_discussion_details example in community guide</li>
+<li><a href="https://github.com/mozilla-ai/any-llm/pull/1631">mozilla-ai/any-llm #1631</a> — fix(groq): allow supported structured output streaming</li>
+<li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/31">PXDiv/Div-Linuwu-Sense #31</a> — fix(keyboard): enable true Static lighting on PHN16-72</li>
+<li><a href="https://github.com/linux-do/override/pull/94">linux-do/override #94</a> — security: stop logging code completion API keys</li>
+<li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/20">PXDiv/Div-Linuwu-Sense #20</a> — feat(predator): add PHN16-72 back logo/lightbar support</li>
+<li><a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/214">PXDiv/Div-Acer-Manager-Max #214</a> — feat(predator): add PHN16-72 back logo/lightbar controls</li>
+</ul>
+<p align="center"><a href="https://github.com/pulls?q=is%3Apr%20is%3Aopen%20author%3A0PeterAdel">View all open PRs</a></p>
+</details>
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
 
 
