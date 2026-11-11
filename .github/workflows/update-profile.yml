@@ -16,7 +16,7 @@ on:
   schedule:
     # External repository merges cannot trigger this repository directly.
     # Poll twice per hour; scheduled runs may still be delayed by GitHub.
-    - cron: "17,47 * * * *"
+    - cron: "13,43 * * * *"
   workflow_dispatch:
 
 permissions:
