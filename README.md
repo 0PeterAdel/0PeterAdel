@@ -83,14 +83,14 @@
 <table align="center">
   <tr>
     <td align="center" valign="top" width="50%">
-      <a href="https://github.com/alltheplaces/alltheplaces"><img alt="AllThePlaces" src="https://img.shields.io/badge/AllThePlaces-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-      <p><b>1 merged PR</b><br /><sub>[Welcia JP] Fix spider download timeout</sub></p>
-      <a href="https://github.com/alltheplaces/alltheplaces/pull/20456"><img alt="PR #20456 merged" src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+      <a href="https://github.com/CrossGL/crosstl"><img alt="CrossTL" src="https://img.shields.io/badge/CrossTL-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>3 merged PRs</b><br /><sub>fix(wgsl): convert the signed operand of a mixed uint and int operation to u32</sub></p>
+      <a href="https://github.com/CrossGL/crosstl/pull/4362"><img alt="PR #4362 merged" src="https://img.shields.io/badge/PR%20%234362-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4384"><img alt="PR #4384 merged" src="https://img.shields.io/badge/PR%20%234384-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4266"><img alt="PR #4266 merged" src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
     </td>
     <td align="center" valign="top" width="50%">
-      <a href="https://github.com/CrossGL/crosstl"><img alt="CrossTL" src="https://img.shields.io/badge/CrossTL-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-      <p><b>1 merged PR</b><br /><sub>fix: fix GLSL sample queries for multisample images</sub></p>
-      <a href="https://github.com/CrossGL/crosstl/pull/4266"><img alt="PR #4266 merged" src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+      <a href="https://github.com/alltheplaces/alltheplaces"><img alt="AllThePlaces" src="https://img.shields.io/badge/AllThePlaces-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>3 merged PRs</b><br /><sub>[McAlister&#x27;s Deli] Exclude catering pages from store locations</sub></p>
+      <a href="https://github.com/alltheplaces/alltheplaces/pull/20474"><img alt="PR #20474 merged" src="https://img.shields.io/badge/PR%20%2320474-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20475"><img alt="PR #20475 merged" src="https://img.shields.io/badge/PR%20%2320475-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20456"><img alt="PR #20456 merged" src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
     </td>
   </tr>
   <tr>
