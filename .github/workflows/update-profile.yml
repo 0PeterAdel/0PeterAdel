@@ -8,7 +8,7 @@ on:
       - scripts/update_profile.py
       - .github/workflows/update-profile.yml
   schedule:
-    - cron: "17 4 * * *"
+    - cron: "13,43 * * * *"
   workflow_dispatch:
 
 permissions:
