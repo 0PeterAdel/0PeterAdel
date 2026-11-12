@@ -101,8 +101,9 @@
     </td>
   </tr>
 </table>
-<details><summary>⏳ Open external pull requests (8)</summary>
+<details><summary>⏳ Open external pull requests (9)</summary>
 <ul>
+<li><a href="https://github.com/CrossGL/crosstl/pull/4424">CrossGL/crosstl #4424</a> — fix(wgsl): lower half conversion built-ins</li>
 <li><a href="https://github.com/CrossGL/crosstl/pull/4419">CrossGL/crosstl #4419</a> — fix(codegen): type WaveReadLaneAt lane arguments independently of the value</li>
 <li><a href="https://github.com/CrossGL/crosstl/pull/4375">CrossGL/crosstl #4375</a> — fix(opencl): reject an unterminated comment after a parameter qualifier with SyntaxError</li>
 <li><a href="https://github.com/huggingface/huggingface_hub/pull/5338">huggingface/huggingface_hub #5338</a> — [Docs] Fix get_discussion_details example in community guide</li>
