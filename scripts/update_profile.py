@@ -5,6 +5,7 @@ Runs in the 0PeterAdel/0PeterAdel profile repository via GitHub Actions.
 Only the marked README sections are touched. No third-party dependencies.
 """
 from collections import defaultdict
+from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 from urllib.parse import quote, urlencode
@@ -45,11 +46,13 @@ def github_json(url, payload=None):
 
 
 def verified_merged_prs():
-    search = f"is:pr is:merged author:{USERNAME} -user:{USERNAME} -org:Shift-Core"
+    search = f"is:pr is:merged is:public author:{USERNAME} -user:{USERNAME} -org:Shift-Core"
     results = []
     for page in range(1, 11):
         params = urlencode({"q": search, "sort": "updated", "order": "desc", "per_page": 100, "page": page})
         page_data = github_json(f"https://api.github.com/search/issues?{params}")
+        if page_data.get("incomplete_results") or page_data.get("total_count", 0) > 1000:
+            raise RuntimeError("Incomplete or oversized search; preserving existing README")
         items = page_data["items"]
         if page == 1 and not items:
             raise RuntimeError("Search returned zero merged PRs; preserving existing README")
@@ -81,7 +84,7 @@ def verified_merged_prs():
 
 def verified_open_prs():
     """Discover the author's open PRs in external repos, without counting them as merged."""
-    search = f"is:pr is:open author:{USERNAME} -user:{USERNAME} -org:Shift-Core"
+    search = f"is:pr is:open is:public author:{USERNAME} -user:{USERNAME} -org:Shift-Core"
     results = []
     seen = set()
     for page in range(1, 11):
@@ -89,6 +92,8 @@ def verified_open_prs():
         page_data = github_json(f"https://api.github.com/search/issues?{params}")
         if page_data.get("incomplete_results"):
             raise RuntimeError("GitHub search results are incomplete; retaining the current README")
+        if page_data.get("incomplete_results") or page_data.get("total_count", 0) > 1000:
+            raise RuntimeError("Incomplete or oversized search; preserving existing README")
         items = page_data["items"]
         for issue in items:
             match = re.fullmatch(r"https://github\.com/([^/]+)/([^/]+)/pull/(\d+)", issue["html_url"])
@@ -144,7 +149,7 @@ def render_contributions(prs, open_prs):
         grouped[pr["repo"]].append(pr)
     repos = sorted(grouped, key=lambda r: (max(p["merged"] for p in grouped[r]), r.casefold()), reverse=True)
     cards = []
-    for repo in repos[:10]:
+    for repo in repos:
         recent = sorted(grouped[repo], key=lambda p: p["merged"], reverse=True)
         display = LABELS.get(repo, repo.split("/")[-1].replace("-", " "))
         count = len(recent)
@@ -177,9 +182,11 @@ def render_contributions(prs, open_prs):
     return (
         f"{START}\n"
         '<h3 align="center">🌍 Open Source Contributions</h3>\n'
-        '<p align="center">Verified merged pull requests in external communities · Refreshed regularly via GitHub Actions</p>\n'
+        '<p align="center">Verified merged pull requests in external communities · Refreshed automatically via GitHub Actions</p>\n'
         '<table align="center">\n' + "\n".join(rows) + '\n</table>\n'
-        f"{render_open_prs(open_prs)}{END}"
+        f"{render_open_prs(open_prs)}"
+        f'<p align="center"><sub>Last refreshed: {datetime.now(timezone.utc):%Y-%m-%d %H:%M UTC}</sub></p>\n'
+        f"{END}"
     )
 
 
@@ -252,3 +259,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -99,6 +99,30 @@ class ProfileUpdateTests(unittest.TestCase):
         self.assertTrue(result.endswith("\nFooter\n"))
         self.assertNotIn("stale", result)
 
+    def test_incomplete_merged_search_is_rejected(self):
+        with patch.object(update_profile, "github_json", return_value={
+            "items": [], "incomplete_results": True
+        }):
+            with self.assertRaisesRegex(RuntimeError, "Incomplete"):
+                update_profile.verified_merged_prs()
+
+    def test_oversized_search_is_rejected(self):
+        with patch.object(update_profile, "github_json", return_value={
+            "items": [], "total_count": 1001
+        }):
+            with self.assertRaisesRegex(RuntimeError, "oversized"):
+                update_profile.verified_open_prs()
+
+    def test_five_merges_count_all_but_show_four_badges(self):
+        prs = [{"repo": "example/project", "number": n, "title": "Fix",
+                "url": f"https://github.com/example/project/pull/{n}",
+                "merged": f"2026-11-{n:02d}T00:00:00Z"} for n in range(1, 6)]
+        html = update_profile.render_contributions(prs, [])
+        self.assertIn("5 merged PRs", html)
+        self.assertIn("+1 more merged PRs", html)
+        self.assertEqual(html.count('-MERGED-'), 4)
+        self.assertIn("Last refreshed:", html)
+
     def test_missing_merged_search_results_must_not_erase_readme(self):
         with patch.object(update_profile, "github_json", return_value={"items": []}):
             with self.assertRaisesRegex(RuntimeError, "zero merged PRs"):
@@ -107,3 +131,4 @@ class ProfileUpdateTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

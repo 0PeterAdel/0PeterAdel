@@ -79,13 +79,13 @@
 
 <!-- OPEN SOURCE CONTRIBUTIONS START -->
 <h3 align="center">🌍 Open Source Contributions</h3>
-<p align="center">Verified merged pull requests in external communities · Refreshed regularly via GitHub Actions</p>
+<p align="center">Verified merged pull requests in external communities · Refreshed automatically via GitHub Actions</p>
 <table align="center">
   <tr>
     <td align="center" valign="top" width="50%">
       <a href="https://github.com/CrossGL/crosstl"><img alt="CrossTL" src="https://img.shields.io/badge/CrossTL-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-      <p><b>4 merged PRs</b><br /><sub>fix(opencl): reject an unterminated comment after a parameter qualifier with SyntaxError</sub></p>
-      <a href="https://github.com/CrossGL/crosstl/pull/4375"><img alt="PR #4375 merged" src="https://img.shields.io/badge/PR%20%234375-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4362"><img alt="PR #4362 merged" src="https://img.shields.io/badge/PR%20%234362-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4384"><img alt="PR #4384 merged" src="https://img.shields.io/badge/PR%20%234384-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4266"><img alt="PR #4266 merged" src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>5 merged PRs</b><br /><sub>fix(wgsl): write f32tof16 and f16tof32 with pack2x16float and unpack2x16float</sub></p>
+      <a href="https://github.com/CrossGL/crosstl/pull/4424"><img alt="PR #4424 merged" src="https://img.shields.io/badge/PR%20%234424-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4375"><img alt="PR #4375 merged" src="https://img.shields.io/badge/PR%20%234375-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4362"><img alt="PR #4362 merged" src="https://img.shields.io/badge/PR%20%234362-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4384"><img alt="PR #4384 merged" src="https://img.shields.io/badge/PR%20%234384-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <small>+1 more merged PRs</small>
     </td>
     <td align="center" valign="top" width="50%">
       <a href="https://github.com/alltheplaces/alltheplaces"><img alt="AllThePlaces" src="https://img.shields.io/badge/AllThePlaces-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
@@ -101,19 +101,19 @@
     </td>
   </tr>
 </table>
-<details><summary>⏳ Open external pull requests (8)</summary>
+<details><summary>⏳ Open external pull requests (7)</summary>
 <ul>
-<li><a href="https://github.com/CrossGL/crosstl/pull/4424">CrossGL/crosstl #4424</a> — fix(wgsl): lower half conversion built-ins</li>
 <li><a href="https://github.com/CrossGL/crosstl/pull/4419">CrossGL/crosstl #4419</a> — fix(codegen): type WaveReadLaneAt lane arguments independently of the value</li>
 <li><a href="https://github.com/huggingface/huggingface_hub/pull/5338">huggingface/huggingface_hub #5338</a> — [Docs] Fix get_discussion_details example in community guide</li>
 <li><a href="https://github.com/mozilla-ai/any-llm/pull/1631">mozilla-ai/any-llm #1631</a> — fix(groq): allow supported structured output streaming</li>
 <li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/31">PXDiv/Div-Linuwu-Sense #31</a> — fix(keyboard): enable true Static lighting on PHN16-72</li>
 <li><a href="https://github.com/linux-do/override/pull/94">linux-do/override #94</a> — security: stop logging code completion API keys</li>
-<li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/20">PXDiv/Div-Linuwu-Sense #20</a> — feat(predator): add PHN16-72 back logo/lightbar support</li>
 <li><a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/214">PXDiv/Div-Acer-Manager-Max #214</a> — feat(predator): add PHN16-72 back logo/lightbar controls</li>
+<li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/20">PXDiv/Div-Linuwu-Sense #20</a> — feat(predator): add PHN16-72 back logo/lightbar support</li>
 </ul>
 <p align="center"><a href="https://github.com/pulls?q=is%3Apr%20is%3Aopen%20author%3A0PeterAdel">View all open PRs</a></p>
 </details>
+<p align="center"><sub>Last refreshed: 2026-11-13 03:46 UTC</sub></p>
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
 
 
@@ -155,4 +155,5 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
 </p>
+
 
