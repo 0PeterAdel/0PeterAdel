@@ -108,15 +108,15 @@
 </table>
 <details><summary>⏳ Open external pull requests (5)</summary>
 <ul>
+<li><a href="https://github.com/huggingface/huggingface_hub/pull/5338">huggingface/huggingface_hub #5338</a> — [Docs] Fix get_discussion_details example in community guide</li>
 <li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/31">PXDiv/Div-Linuwu-Sense #31</a> — fix(keyboard): enable true Static lighting on PHN16-72</li>
 <li><a href="https://github.com/CrossGL/crosstl/pull/4419">CrossGL/crosstl #4419</a> — fix(codegen): type WaveReadLaneAt lane arguments independently of the value</li>
-<li><a href="https://github.com/huggingface/huggingface_hub/pull/5338">huggingface/huggingface_hub #5338</a> — [Docs] Fix get_discussion_details example in community guide</li>
 <li><a href="https://github.com/mozilla-ai/any-llm/pull/1631">mozilla-ai/any-llm #1631</a> — fix(groq): allow supported structured output streaming</li>
 <li><a href="https://github.com/linux-do/override/pull/94">linux-do/override #94</a> — security: stop logging code completion API keys</li>
 </ul>
 <p align="center"><a href="https://github.com/pulls?q=is%3Apr%20is%3Aopen%20author%3A0PeterAdel">View all open PRs</a></p>
 </details>
-<p align="center"><sub>Last refreshed: 2026-11-18 09:06 UTC</sub></p>
+<p align="center"><sub>Last refreshed: 2026-11-18 18:00 UTC</sub></p>
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
 
 
