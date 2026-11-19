@@ -139,18 +139,10 @@
 <br clear="both">
 
 <!--   stats -->
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img width="100%" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/main/assets/github-stats-dark.svg" alt="GitHub Stats — updated daily" />
-      </td>
-      <td>
-        <img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&theme=github-dark-blue&hide_border=true&date_format=j%20M%20Y" alt="Streak Stats" />
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img width="49%" src="https://raw.githubusercontent.com/0PeterAdel/0PeterAdel/main/assets/github-stats-dark.svg" alt="GitHub Stats — updated daily" />
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=0PeterAdel&amp;theme=github-dark-blue&amp;hide_border=false&amp;border_radius=11&amp;border=30363d&amp;background=0D1117&amp;card_width=510&amp;card_height=262&amp;date_format=j%20M%20Y" alt="GitHub Streak Stats" />
+</p>
 
 <div align="center">
   <h3>
