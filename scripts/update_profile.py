@@ -23,7 +23,7 @@ STATS_PATH = Path("assets/github-stats-dark.svg")
 START = "<!-- OPEN SOURCE CONTRIBUTIONS START -->"
 END = "<!-- OPEN SOURCE CONTRIBUTIONS END -->"
 TOKEN = os.environ.get("GH_TOKEN")
-LABELS = {"CrossGL/crosstl": "CrossTL", "alltheplaces/alltheplaces": "AllThePlaces"}
+LABELS = {"CrossGL/crosstl": "CrossTL", "alltheplaces/alltheplaces": "AllThePlaces", "huggingface/huggingface_hub": "Hugging Face Hub"}
 
 def github_json(url, payload=None):
     if not TOKEN:
@@ -154,14 +154,12 @@ def render_contributions(prs, open_prs):
         display = LABELS.get(repo, repo.split("/")[-1].replace("-", " "))
         count = len(recent)
         badges = []
-        for pr in recent[:4]:
+        for pr in recent:
             badges.append(
                 f'<a href="{escape(pr["url"], quote=True)}">'
                 f'<img alt="PR #{pr["number"]} merged" '
                 f'src="https://img.shields.io/badge/PR%20%23{pr["number"]}-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>'
             )
-        if count > 4:
-            badges.append(f'<small>+{count - 4} more merged PRs</small>')
         repo_link = f"https://github.com/{quote(repo, safe='/')}"
         card = (
             '    <td align="center" valign="top" width="50%">\n'

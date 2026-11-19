@@ -113,14 +113,14 @@ class ProfileUpdateTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "oversized"):
                 update_profile.verified_open_prs()
 
-    def test_five_merges_count_all_but_show_four_badges(self):
+    def test_five_merges_show_all_clickable_badges(self):
         prs = [{"repo": "example/project", "number": n, "title": "Fix",
                 "url": f"https://github.com/example/project/pull/{n}",
                 "merged": f"2026-11-{n:02d}T00:00:00Z"} for n in range(1, 6)]
         html = update_profile.render_contributions(prs, [])
         self.assertIn("5 merged PRs", html)
-        self.assertIn("+1 more merged PRs", html)
-        self.assertEqual(html.count('-MERGED-'), 4)
+        self.assertNotIn("+1 more merged PRs", html)
+        self.assertEqual(html.count('-MERGED-'), 5)
         self.assertIn("Last refreshed:", html)
 
     def test_missing_merged_search_results_must_not_erase_readme(self):
