@@ -125,6 +125,26 @@
 <p align="center"><sub>Last refreshed: 2026-11-20 07:38 UTC</sub></p>
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
 
+<!-- RESEARCH PUBLICATIONS START -->
+<h3 align="center">📚 Research & Publications</h3>
+<div align="center">
+  <a href="https://arxiv.org/abs/2611.24958">
+    <img alt="arXiv:2611.24958" src="https://img.shields.io/badge/arXiv-2611.24958-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" />
+  </a>
+  <p>
+    <strong>Thirteen Improved Binary Constant-Weight Codes<br />with Explicit Cyclic Orbit Certificates</strong><br />
+    <sub>My first research paper (preprint) · Peter Rafat Adel Iskandar · 2026</sub>
+  </p>
+  <p><b>13 improved constructions</b> · 408,729 codewords · 11,386 orbit representatives</p>
+  <p><sub>Explicit cyclic orbit certificates, codeword lists, and reproducible verification software.</sub></p>
+  <p>
+    <a href="https://arxiv.org/abs/2611.24958">📄 Read paper</a> &nbsp;·&nbsp;
+    <a href="https://arxiv.org/pdf/2611.24958">Download PDF</a>
+  </p>
+</div>
+<!-- RESEARCH PUBLICATIONS END -->
+
+
 
 ###
 
