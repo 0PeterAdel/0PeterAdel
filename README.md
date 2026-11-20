@@ -79,28 +79,49 @@
 
 <!-- OPEN SOURCE CONTRIBUTIONS START -->
 <h3 align="center">🌍 Open Source Contributions</h3>
-<p align="center">Verified merged pull requests in open-source communities · Refreshed approximately every 30 minutes</p>
+<p align="center">Verified merged pull requests in external communities · Refreshed regularly via GitHub Actions</p>
 <table align="center">
   <tr>
     <td align="center" valign="top" width="50%">
-      <a href="https://github.com/CrossGL/crosstl"><img alt="CrossTL" src="https://img.shields.io/badge/CrossTL-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-      <p><b>3 merged PRs</b><br /><sub>fix(wgsl): convert the signed operand of a mixed uint and int operation to u32</sub></p>
-      <a href="https://github.com/CrossGL/crosstl/pull/4362"><img alt="PR #4362 merged" src="https://img.shields.io/badge/PR%20%234362-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4384"><img alt="PR #4384 merged" src="https://img.shields.io/badge/PR%20%234384-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4266"><img alt="PR #4266 merged" src="https://img.shields.io/badge/PR%20%234266-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+      <a href="https://github.com/huggingface/huggingface_hub"><img alt="huggingface_hub" src="https://img.shields.io/badge/huggingface_hub-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>1 merged PR</b><br /><sub>[Docs] Fix get_discussion_details example in community guide</sub></p>
+      <a href="https://github.com/huggingface/huggingface_hub/pull/5338"><img alt="PR #5338 merged" src="https://img.shields.io/badge/PR%20%235338-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
     </td>
     <td align="center" valign="top" width="50%">
-      <a href="https://github.com/alltheplaces/alltheplaces"><img alt="AllThePlaces" src="https://img.shields.io/badge/AllThePlaces-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-      <p><b>3 merged PRs</b><br /><sub>[McAlister&#x27;s Deli] Exclude catering pages from store locations</sub></p>
-      <a href="https://github.com/alltheplaces/alltheplaces/pull/20474"><img alt="PR #20474 merged" src="https://img.shields.io/badge/PR%20%2320474-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20475"><img alt="PR #20475 merged" src="https://img.shields.io/badge/PR%20%2320475-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20456"><img alt="PR #20456 merged" src="https://img.shields.io/badge/PR%20%2320456-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+      <a href="https://github.com/PXDiv/Div-Acer-Manager-Max"><img alt="Div Acer Manager Max" src="https://img.shields.io/badge/Div%20Acer%20Manager%20Max-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>2 merged PRs</b><br /><sub>feat(predator): add PHN16-72 back logo/lightbar controls</sub></p>
+      <a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/214"><img alt="PR #214 merged" src="https://img.shields.io/badge/PR%20%23214-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/280"><img alt="PR #280 merged" src="https://img.shields.io/badge/PR%20%23280-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="https://github.com/PXDiv/Div-Linuwu-Sense"><img alt="Div Linuwu Sense" src="https://img.shields.io/badge/Div%20Linuwu%20Sense-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>1 merged PR</b><br /><sub>feat(predator): add PHN16-72 back logo/lightbar support</sub></p>
+      <a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/20"><img alt="PR #20 merged" src="https://img.shields.io/badge/PR%20%2320-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="https://github.com/CrossGL/crosstl"><img alt="CrossTL" src="https://img.shields.io/badge/CrossTL-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>5 merged PRs</b><br /><sub>fix(wgsl): write f32tof16 and f16tof32 with pack2x16float and unpack2x16float</sub></p>
+      <a href="https://github.com/CrossGL/crosstl/pull/4424"><img alt="PR #4424 merged" src="https://img.shields.io/badge/PR%20%234424-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4375"><img alt="PR #4375 merged" src="https://img.shields.io/badge/PR%20%234375-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4362"><img alt="PR #4362 merged" src="https://img.shields.io/badge/PR%20%234362-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/CrossGL/crosstl/pull/4384"><img alt="PR #4384 merged" src="https://img.shields.io/badge/PR%20%234384-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <small>+1 more merged PRs</small>
     </td>
   </tr>
   <tr>
     <td align="center" valign="top" colspan="2" width="100%">
-      <a href="https://github.com/PXDiv/Div-Acer-Manager-Max"><img alt="Div Acer Manager Max" src="https://img.shields.io/badge/Div%20Acer%20Manager%20Max-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-      <p><b>1 merged PR</b><br /><sub>fix(keyboard): preserve Static color readback and report apply failures</sub></p>
-      <a href="https://github.com/PXDiv/Div-Acer-Manager-Max/pull/280"><img alt="PR #280 merged" src="https://img.shields.io/badge/PR%20%23280-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a>
+      <a href="https://github.com/alltheplaces/alltheplaces"><img alt="AllThePlaces" src="https://img.shields.io/badge/AllThePlaces-OPEN%20SOURCE-0e75b6?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+      <p><b>5 merged PRs</b><br /><sub>[Staples CA] Filter wireless service locations</sub></p>
+      <a href="https://github.com/alltheplaces/alltheplaces/pull/20473"><img alt="PR #20473 merged" src="https://img.shields.io/badge/PR%20%2320473-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20506"><img alt="PR #20506 merged" src="https://img.shields.io/badge/PR%20%2320506-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20474"><img alt="PR #20474 merged" src="https://img.shields.io/badge/PR%20%2320474-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <a href="https://github.com/alltheplaces/alltheplaces/pull/20475"><img alt="PR #20475 merged" src="https://img.shields.io/badge/PR%20%2320475-MERGED-2ea44f?style=flat-square&amp;logo=github&amp;logoColor=white" /></a> &nbsp; <small>+1 more merged PRs</small>
     </td>
   </tr>
 </table>
+<details><summary>⏳ Open external pull requests (4)</summary>
+<ul>
+<li><a href="https://github.com/PXDiv/Div-Linuwu-Sense/pull/31">PXDiv/Div-Linuwu-Sense #31</a> — fix(keyboard): enable true Static lighting on PHN16-72</li>
+<li><a href="https://github.com/CrossGL/crosstl/pull/4419">CrossGL/crosstl #4419</a> — fix(codegen): type WaveReadLaneAt lane arguments independently of the value</li>
+<li><a href="https://github.com/mozilla-ai/any-llm/pull/1631">mozilla-ai/any-llm #1631</a> — fix(groq): allow supported structured output streaming</li>
+<li><a href="https://github.com/linux-do/override/pull/94">linux-do/override #94</a> — security: stop logging code completion API keys</li>
+</ul>
+<p align="center"><a href="https://github.com/pulls?q=is%3Apr%20is%3Aopen%20author%3A0PeterAdel">View all open PRs</a></p>
+</details>
 <!-- OPEN SOURCE CONTRIBUTIONS END -->
 
 
