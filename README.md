@@ -139,6 +139,7 @@
   <p><sub>Explicit cyclic orbit certificates, codeword lists, and reproducible verification software.</sub></p>
   <p>
     <a href="https://arxiv.org/abs/2611.24958">📄 Read paper</a> &nbsp;·&nbsp;
+    <a href="https://aeb.win.tue.nl/codes/Andw.html#:~:text=Ad%3A%20Peter%20Adel%2C%20email%202026%2D11%2D09%20with%2013%20new%20codes.">🏅 Brouwer's Tables (13 codes)</a> &nbsp;·&nbsp;
     <a href="https://arxiv.org/pdf/2611.24958">Download PDF</a>
   </p>
 </div>
